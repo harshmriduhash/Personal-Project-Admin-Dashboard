@@ -1,28 +1,40 @@
 E-Commerce Shop Project Proposal:
-Base Goal:
-  Create E-Commerce Site:
-    Project Description:
-      E- Commerce Site for selling Anime
-    Clientle:
-      Consumers who purchase anime
-    Outputs Needed:
-      Main Shop Page
-      Business Logo
-      Search Bar
-      Catalog of Anime
-      Shopping Cart
 
-    Inputs needed to generate these outputs?
-        User needs to enter info to search for Anime
-        User adds items to the Shopping Cart
+  Base Goals:
 
-    Listing of technologies I plan to use:
-        React
-        Redux
-        Node.js
-        Knex
-        Express
+    Create E-Commerce Site
+
+  Project Description:
+
+      E- Commerce Site for Selling Anime
+
+  Clientele:
+
+    Consumers who purchase Anime
+
+  Outputs Needed:
+
+    Main Shop Page
+    Business Logo
+    Search Bar
+    Catalog of Anime
+    Shopping Cart
+
+  Inputs Needed to Generate these Outputs:
+
+    User needs to enter info to search for Anime
+    User adds items to the Shopping Cart
+
+  Listing of Technologies I Plan to Use:
+
+    React
+    Redux
+    Node.js
+    Knex
+    Express
+
 Stretch Goals:      
+
     Content management capabilities
     Promotion and discount code tools
     An easy-to-use checkout
