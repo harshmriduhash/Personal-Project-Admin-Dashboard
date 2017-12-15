@@ -4,7 +4,7 @@ exports.up = function(knex, Promise) {
     table.string('photo_url');
     table.string('title');
     table.string('rating');
-    table.integer('price');
+    table.decimal('price');
     table.boolean('on_sale').defaultsTo(false);
     table.boolean('in_cart').defaultsTo(false);
   });
