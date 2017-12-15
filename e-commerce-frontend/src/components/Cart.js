@@ -12,16 +12,23 @@ import { Container, Card, CardTitle, CardSubtitle, Form, FormGroup, Label, Input
 
 
 const Cart = (props) => {
-  
-    let animeItemsInCart = props.cart.map(i => <CartItem key={i.id} item={i} />)
-    let subtotal = props.cart.reduce((t, i) => t + i.price, 0);
-    let tax = (subtotal * .086).toFixed(2);
-    let total = (subtotal + Number(tax)).toFixed(2);
+  let total = 0;
+  let subtotal = 0;
+  let tax = 0;
+  let animeItemsInCart = [];
+  if(props.cart){
+    animeItemsInCart = props.cart.map(i => <CartItem key={i.id} item={i} />)
+    subtotal = props.cart.reduce((t, i) => t + i.price, 0);
+    subtotal = parseInt(subtotal);
+    tax = (subtotal * .086).toFixed(2);
+    total = (subtotal + parseInt(tax));
+    total = total.toFixed(2);
+  }
 
     return (
       <div id="cart">
         <Container style={{marginTop: 30}}>
-          <Card body inverse color="danger">
+          <Card body inverse color="info">
             <CardTitle>YOUR CART</CardTitle>
             <CardTitle>{animeItemsInCart}</CardTitle>
             <CardTitle>SUBTOTAL: ${subtotal}</CardTitle>

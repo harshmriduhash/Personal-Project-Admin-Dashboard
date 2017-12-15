@@ -13,7 +13,7 @@ import { Card, CardBody, CardSubtitle, CardImg, Button,  Label } from 'reactstra
 class SingleAnimeItem extends React.Component {
 
   render(){
-    
+
     return (
       <div>
         <Card>

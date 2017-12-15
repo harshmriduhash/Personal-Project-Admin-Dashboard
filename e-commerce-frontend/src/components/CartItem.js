@@ -16,10 +16,10 @@ class CartItem extends React.Component {
   }
 
   render () {
-    
+
     return (
       <div>
-        <Card body inverse color="warning">
+        <Card body inverse color="dark">
           <Row>
             <Col><CardTitle>{this.props.item.title}</CardTitle></Col>
             <Col><CardTitle><Icon icon={trash} onClick={this.handleRemoveItem}/></CardTitle></Col>

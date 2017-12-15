@@ -23,7 +23,7 @@ const DetailsForAnimeList = (props) => {
     <div>
       <Card>
         <CardBody>
-          <Label for="title">ANIME NAME: </Label>
+          <Label for="title">ANIME TITLE: </Label>
           <CardSubtitle>{props.anime ? props.anime.title : ''}</CardSubtitle>
           <CardImg top width="100%" src={props.anime ? props.anime.photo_url : ''} alt="Card image cap" />
           <Label for="rating">RATING: </Label>

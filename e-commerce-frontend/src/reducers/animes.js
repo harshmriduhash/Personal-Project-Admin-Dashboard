@@ -22,11 +22,11 @@ export default(state = [], action) => {
     case ADD_ANIME_PENDING:
         return state;
     case ADD_ANIME_SUCCESS:
-        console.log('action: ', action)
         return [...state, ...action.payload.data];
     case ADD_ANIME_TO_CART_PENDING:
             return state;
     case ADD_ANIME_TO_CART_SUCCESS:
+            console.log('action: ', action)
             return [...action.payload.data];
     case REMOVE_ANIME_FROM_CART_PENDING:
         return state;
@@ -35,12 +35,16 @@ export default(state = [], action) => {
     case EDIT_ANIME_PENDING:
             return state;
     case EDIT_ANIME_SUCCESS:
-            return [...action.payload.data];
+            let otherAnime = state.filter(anime => anime.id != action.payload.data[0].id)
+            let updatedAnime = [
+              ...otherAnime,
+              action.payload.data[0]
+            ]
+            return updatedAnime
     case REMOVE_ANIME_PENDING:
         return state;
     case REMOVE_ANIME_SUCCESS:
-        return [...action.payload.data];
-
+        return [...action.payload.data]
     default:
         return state;
   }

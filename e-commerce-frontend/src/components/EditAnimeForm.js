@@ -8,7 +8,7 @@ import {Field, reduxForm} from 'redux-form';
 class EditAnimeForm extends React.Component {
 
   editAnime = (anime) => {
-    this.props.editAnime(this.props.match.params.id, anime)
+    this.props.editAnime(this.props.match.params.id, anime, this.props.history)
   }
 
   render () {

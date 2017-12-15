@@ -73,7 +73,7 @@ export const removeAnimeFromCart = (id) => {
 }
 
 /*Patch Edit One Anime Item*/
-export const editAnime = (id, updatedAnimeItem) => {
+export const editAnime = (id, updatedAnimeItem, history) => {
   console.log('id: ', id)
   console.log('updatedAnimeItem: ', updatedAnimeItem)
   return async (dispatch) => {
@@ -83,11 +83,13 @@ export const editAnime = (id, updatedAnimeItem) => {
       type: EDIT_ANIME_SUCCESS,
       payload: anime
     })
+    history.push('/admin')
   }
 }
 
 /*Delete One Anime Item */
 export const removeAnime = (id) => {
+  console.log('id:' , id)
   return async (dispatch) => {
     dispatch({ type: REMOVE_ANIME_PENDING })
       let anime = await axios.delete(`http://localhost:8000/${id}/delete`);
