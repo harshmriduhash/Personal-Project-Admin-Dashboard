@@ -1,0 +1,2 @@
+2017-12-14 22:20:18.306 MST [4926] FATAL:  database files are incompatible with server
+2017-12-14 22:20:18.306 MST [4926] DETAIL:  The data directory was initialized by PostgreSQL version 9.6, which is not compatible with this version 10.1.

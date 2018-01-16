@@ -23,7 +23,7 @@ export default class TopNav extends React.Component {
     return (
       <div>
         <Navbar color="info" light expand="md">
-          <NavbarBrand href="/">OTAKU HAVEN</NavbarBrand>
+          <NavbarBrand href="/">OTAKU HAVEN ADMIN DASHBOARD</NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>

@@ -17,15 +17,15 @@ class AddAnimeForm extends React.Component {
     return (
       <form onSubmit={this.props.handleSubmit(this.addAnime)}>
         <div>
-          <label htmlFor="title">Title</label>
+          <label htmlFor="title">Title: </label>
           <Field name="title" component="input" type="text" />
         </div>
         <div>
-          <label htmlFor="rating">Rating</label>
+          <label htmlFor="rating">Rating: </label>
           <Field name="rating" component="input" type="text" />
         </div>
         <div>
-          <label htmlFor="price">Price</label>
+          <label htmlFor="price">Price: </label>
           <Field name="price" component="input" type="number" />
         </div>
         <button type="submit">Submit</button>
